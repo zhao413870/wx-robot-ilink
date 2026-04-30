@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "commonjs",
-    "lib": ["ES2020"],
+    "module": "CommonJS",
+    "lib": ["ES2020", "DOM"], // 加上 DOM 支持，让 TypeScript 认识 console
+    "types": ["node"], // 加上 Node.js 类型支持
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
